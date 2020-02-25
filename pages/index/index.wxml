@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<collapse id="main" title="Hello">
+  <view>1111</view>
+  <view>1111</view>
+  <view>1111</view>
+</collapse>
+<collapse title="World">
+  <view>2222</view>
+</collapse>

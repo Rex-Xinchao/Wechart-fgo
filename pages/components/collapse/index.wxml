@@ -1,0 +1,11 @@
+<!--pages/components/collapse/index.wxml-->
+<view class="collapse-main">
+  <view class="collapse-title" bindtap="toggle">
+    {{title}}
+    <image wx:if="{{!showDetail}}" class="collapse-icon_arrow" src="/static/images/pickUp.svg" />
+    <image wx:else class="collapse-icon_arrow" src="/static/images/pickDown.svg" />
+  </view>
+  <div class="collapse-detail" id="detail">
+    <slot></slot>
+  </div>
+</view>

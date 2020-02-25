@@ -1,0 +1,40 @@
+/* pages/components/collapse/index.wxss */
+
+.collapse-main {
+  display: block;
+  width: calc(100% - 40rpx);
+  height: 48px;
+  min-height: 48px;
+  background-color: white;
+  margin: 0 20rpx;
+  box-sizing: border-box;
+  border-top: 1px solid #ebeef5;
+  border-bottom: 1px solid #ebeef5;
+  overflow: hidden;
+}
+
+.collapse-main .collapse-title {
+  display: inline-block;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.collapse-main .collapse-title .collapse-icon_arrow {
+  width: 12px;
+  height: 12px;
+  float: right;
+  margin-top: 18px;
+}
+
+.collapse-main .collapse-detail {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  font-size: 14px;
+  padding-bottom: 25px;
+}
