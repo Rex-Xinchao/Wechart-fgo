@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "collapse": "../components/collapse/index"
+    "collapse": "../components/collapse/index",
+    "ceil": "../components/ceil/index"
   }
 }

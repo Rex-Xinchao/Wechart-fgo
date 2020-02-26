@@ -1,9 +1,14 @@
 <!--index.wxml-->
 <collapse id="main" title="Hello">
-  <view>1111</view>
-  <view>1111</view>
-  <view>1111</view>
+  <ceil name="卫宫士郎" cid="1" classify="Archer1" star="1" imageUrl="/static/images/leftRight.png"></ceil>
+  <ceil name="卫宫士郎" classify="Archer" star="2" imageUrl="/static/images/leftRight.png"></ceil>
+  <ceil name="卫宫士郎" classify="Archer" star="3" imageUrl="/static/images/leftRight.png"></ceil>
+  <ceil name="卫宫士郎" classify="Archer" star="4" imageUrl="/static/images/leftRight.png"></ceil>
 </collapse>
 <collapse title="World">
-  <view>2222</view>
+  <ceil name="卫宫士郎" classify="Archer" star="5" imageUrl="/static/images/leftRight.png"></ceil>
+  <ceil name="卫宫士郎" classify="Archer" star="6" imageUrl="/static/images/leftRight.png"></ceil>
+  <ceil name="卫宫士郎" classify="Archer" star="1" imageUrl="/static/images/leftRight.png"></ceil>
+  <ceil name="卫宫士郎" classify="Archer" star="2" imageUrl="/static/images/leftRight.png"></ceil>
+  <ceil name="卫宫士郎" classify="Archer" star="3" imageUrl="/static/images/leftRight.png"></ceil>
 </collapse>

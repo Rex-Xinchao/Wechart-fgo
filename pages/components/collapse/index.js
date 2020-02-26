@@ -1,4 +1,4 @@
-// pages/components/collapse/collepse.js
+// pages/components/collapse/index.js
 const MAIN_HEIGHT = 48
 Component({
   /**
@@ -31,7 +31,7 @@ Component({
     },
     slide: function() {
       const _this = this
-      const query = wx.createSelectorQuery().in(this)
+      const query = wx.createSelectorQuery().in(_this)
       query.select('#detail').boundingClientRect(res => {
         let detailHeight = res.height + MAIN_HEIGHT + 'px'
         let mainHeight = MAIN_HEIGHT + 'px'
@@ -41,7 +41,7 @@ Component({
           height: height_start
         }, {
           height: height_end
-        }], 1000)
+        }], 600)
       }).exec()
     }
   }

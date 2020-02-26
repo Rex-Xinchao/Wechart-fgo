@@ -1,0 +1,11 @@
+<!--pages/components/ceil/index.wxml-->
+<view class="ceil-main" bindtap="pageTo">
+  <view class="ceil-image">
+    <image src="{{imageUrl}}"></image>
+  </view>
+  <view class="ceil-msg">
+    <view class="ceil-name">{{name}}</view>
+    <view class="ceil-star {{star >= 4 && star <= 5 ? 'star-yellow' :''}} {{star === 6 ? 'star-red' :''}}">{{star}} 星</view>
+    <view class="ceil-classify">{{classify}}</view>
+  </view>
+</view>

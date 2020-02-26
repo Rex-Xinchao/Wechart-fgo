@@ -1,0 +1,78 @@
+/* pages/components/ceil/index.wxss */
+
+.ceil-main {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 225rpx;
+  height: 142rpx;
+  border: 1px solid #ccc;
+  padding: 10rpx 4rpx;
+  overflow: hidden;
+}
+
+.ceil-main .ceil-image {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100rpx;
+  height: 120rpx;
+  vertical-align: top;
+}
+
+.ceil-main .ceil-image image {
+  width: 100rpx;
+  height: 120rpx;
+  background-color: #ccc;
+}
+
+.ceil-main .ceil-msg {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 116rpx;
+  height: 120rpx;
+  vertical-align: top;
+  padding-left: 4rpx;
+}
+
+.ceil-main .ceil-msg .ceil-name {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 32rpx;
+  font-size: 28rpx;
+  line-height: 32rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 10rpx 0;
+  padding: 0;
+}
+
+.ceil-main .ceil-msg .ceil-star, .ceil-classify {
+  width: auto;
+  height: 24rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 0;
+}
+
+.ceil-main .ceil-msg .ceil-star {
+  display: inline-block;
+  background-color: yellowgreen;
+  color: white;
+  border-radius: 4px;
+  padding: 6rpx 10rpx;
+}
+
+.ceil-main .ceil-msg .star-yellow {
+  background-color: rgb(228, 160, 35);
+}
+
+.ceil-main .ceil-msg .star-red {
+  background-color: rgb(216, 29, 29);
+}
+

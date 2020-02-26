@@ -2,3 +2,7 @@
 .container{
   width: 100%;
 }
+
+ceil {
+  padding-right: 8rpx;
+}
