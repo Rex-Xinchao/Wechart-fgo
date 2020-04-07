@@ -37,12 +37,12 @@ ceil {
   font-size: 12px;
   padding: 4px 8px;
   float: left;
-  margin-right: 4px;
+  margin: 0 4px 4px 0;
 }
 
 .tag-button {
   width: 180rpx !important;
-  position: absolute;
+  position: fixed;
   right: 20rpx;
   bottom: 20rpx;
   background-color: #3e73e3;
