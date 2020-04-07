@@ -1,18 +1,20 @@
 <!--index.wxml-->
-<view class="tag-list">
-  <text class="tag-text">当前选中的标签：</text>
-  <view class="tag-item-group">
-    <view class="tag-item" wx:for="{{tagList}}" wx:key="*this"> {{item}} </view>
+<view class="main">
+  <view class="tag-list">
+    <text class="tag-text">当前选中的标签：</text>
+    <view class="tag-item-group">
+      <view class="tag-item" wx:for="{{tagList}}" wx:key="*this"> {{item}} </view>
+    </view>
   </view>
+  <collapse wx:for="{{tagList}}" wx:for-item="type" wx:key="*this" title="{{type}}">
+    <ceil wx:for="{{dataList}}" wx-if="{{type === item.classify}}" wx:key="cid" name="{{item.name}}" cid="{{item.cid}}" classify="{{item.classify}}" star="{{item.star}}" imageUrl="{{item.imageUrl}}"></ceil>
+  </collapse>
+  <button class="tag-button" bindtap="showDialog">选择标签</button>
+  <mp-dialog title="请选择标签" show="{{dialogShow}}" bindbuttontap="closeDialog" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for="{{typeList}}" wx:key="name" style="display: block; width: 50%; text-align: left; float: left;">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.name}}
+      </label>
+    </checkbox-group>
+  </mp-dialog>
 </view>
-<collapse wx:for="{{tagList}}" wx:for-item="type" wx:key="*this" title="{{type}}">
-  <ceil wx:for="{{dataList}}" wx-if="{{type === item.classify}}" wx:key="cid" name="{{item.name}}" cid="{{item.cid}}" classify="{{item.classify}}" star="{{item.star}}" imageUrl="{{item.imageUrl}}"></ceil>
-</collapse>
-<button class="tag-button" bindtap="showDialog">选择标签</button>
-<mp-dialog title="请选择标签" show="{{dialogShow}}" bindbuttontap="closeDialog" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
-  <checkbox-group bindchange="checkboxChange">
-    <label class="checkbox" wx:for="{{typeList}}" wx:key="name" style="display: block; width: 50%; text-align: left; float: left;">
-      <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
-    </label>
-  </checkbox-group>
-</mp-dialog>
