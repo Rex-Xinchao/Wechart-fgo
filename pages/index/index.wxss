@@ -1,8 +1,54 @@
 /**index.wxss**/
-.container{
+
+.container {
   width: 100%;
 }
 
 ceil {
   padding-right: 8rpx;
+}
+
+.tag-list {
+  width: 100%;
+  padding: 0 20rpx;
+}
+
+.tag-list .tag-text {
+  font-size: 14px;
+  line-height: 24px;
+  text-indent: 2em;
+}
+
+.tag-list .tag-item-group {
+  width: calc(100% - 40rpx);
+  height: auto;
+  overflow: hidden;
+  border-top: 1px solid #ebeef5;
+  border-bottom: 1px solid #ebeef5;
+  padding: 20rpx 0 40rpx 0;
+}
+
+.tag-list .tag-item-group .tag-item {
+  background-color: #3e73e3;
+  width: auto;
+  height: auto;
+  line-height: 40rpx;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  float: left;
+  margin-right: 4px;
+}
+
+.tag-button {
+  width: 180rpx !important;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  background-color: #3e73e3;
+  height: auto;
+  line-height: 40rpx;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
 }

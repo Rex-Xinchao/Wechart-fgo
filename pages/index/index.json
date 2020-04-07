@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "collapse": "../components/collapse/index",
-    "ceil": "../components/ceil/index"
+    "ceil": "../components/ceil/index",
+    "mp-dialog": "../../miniprogram_npm/weui-miniprogram/dialog/dialog"
   }
 }

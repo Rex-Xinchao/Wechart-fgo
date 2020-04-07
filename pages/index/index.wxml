@@ -1,14 +1,18 @@
 <!--index.wxml-->
-<collapse id="main" title="Hello">
-  <ceil name="卫宫士郎" cid="1" classify="Archer1" star="1" imageUrl="/static/images/leftRight.png"></ceil>
-  <ceil name="卫宫士郎" classify="Archer" star="2" imageUrl="/static/images/leftRight.png"></ceil>
-  <ceil name="卫宫士郎" classify="Archer" star="3" imageUrl="/static/images/leftRight.png"></ceil>
-  <ceil name="卫宫士郎" classify="Archer" star="4" imageUrl="/static/images/leftRight.png"></ceil>
+<view class="tag-list">
+  <text class="tag-text">当前选中的标签：</text>
+  <view class="tag-item-group">
+    <view class="tag-item" wx:for="{{tagList}}" wx:key="*this"> {{item}} </view>
+  </view>
+</view>
+<collapse wx:for="{{tagList}}" wx:for-item="type" wx:key="*this" title="{{type}}">
+  <ceil wx:for="{{dataList}}" wx-if="{{type === item.classify}}" wx:key="cid" name="{{item.name}}" cid="{{item.cid}}" classify="{{item.classify}}" star="{{item.star}}" imageUrl="{{item.imageUrl}}"></ceil>
 </collapse>
-<collapse title="World">
-  <ceil name="卫宫士郎" classify="Archer" star="5" imageUrl="/static/images/leftRight.png"></ceil>
-  <ceil name="卫宫士郎" classify="Archer" star="6" imageUrl="/static/images/leftRight.png"></ceil>
-  <ceil name="卫宫士郎" classify="Archer" star="1" imageUrl="/static/images/leftRight.png"></ceil>
-  <ceil name="卫宫士郎" classify="Archer" star="2" imageUrl="/static/images/leftRight.png"></ceil>
-  <ceil name="卫宫士郎" classify="Archer" star="3" imageUrl="/static/images/leftRight.png"></ceil>
-</collapse>
+<button class="tag-button" bindtap="showDialog">选择标签</button>
+<mp-dialog title="test" show="{{dialogShow}}" bindbuttontap="closeDialog" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+  <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{typeList}}" wx:key="name">
+      <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.name}}
+    </label>
+  </checkbox-group>
+</mp-dialog>

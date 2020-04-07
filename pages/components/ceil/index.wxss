@@ -5,7 +5,7 @@
   box-sizing: border-box;
   width: 225rpx;
   height: 142rpx;
-  border: 1px solid #ccc;
+  border: 1px solid #ebeef5;
   padding: 10rpx 4rpx;
   overflow: hidden;
 }
